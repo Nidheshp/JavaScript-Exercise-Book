@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <script src="C:\Users\Dhileep\Desktop\QA\Week 6\Class work\JavaScript/Exercise Book.js" ></script>
+    
+<h4>Creating a person object with three values Name, Age and Occupation</h4>
+
+<p id="Person"></p>
+<script>
+    var person = {
+    name: "Nidhesh",
+    age: "24", 
+    occupation: "Trainee Consultant"
+};    
+document.getElementById("Person").innerHTML =
+person.name + " is " + person.age + " years old and his current occupation is as a " + person.occupation + "." ;
+    </script>
+
+<h4>Editing the contents of the previous entry and out putting them again</h4>
+
+<p id="Person2"></p>
+<script>
+    var person = {
+    name: "Nidhesh",
+    age: "24", 
+    occupation: "Trainee Consultant"
+};
+person.name = "James"    
+document.getElementById("Person2").innerHTML =
+person.name + " is " + person.age + " years old and his current occupation is as a " + person.occupation + "." ;
+</script>
+    
+    
+    <input type="button" oneclick="increaseAge()" value="Increase age of person" />    
+    
+    
+    <p>Enter a number to calculate its square</p>
+    <p id="square"></p>
+    <label for="num1">Input Number:</label>
+    <input type="number" id="num1">
+    <input type="submit" value="Square Number" onclick="square()"/>
+    <br>
+    
+    <p>Enter three numbers to add them together</p>
+     <p id="sums"></p>
+    
+     <label for="num11">Input Number 1:</label>
+     <input type="number" id="num11">
+    
+    <label for="num12">Input Number 2:</label>
+     <input type="number" id="num12">
+    
+    <label for="num13">Input Number 3:</label>
+     <input type="number" id="num13">
+    
+     <input type="submit" value="Add Numbers" onclick="sumofnum()"/>
+     <br>
+    
+
+</head>
+</html>

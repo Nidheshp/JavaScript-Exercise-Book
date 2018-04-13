@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<body>
+    
+<h2>Coding Challenge 2</h2>
+
+<h4>Here we are squaring the number 5</h4>
+<p id="Square"></p>
+    
+<script>
+var x = sqrFunc(5,2);
+document.getElementById("Square").innerHTML = x;
+    
+function sqrFunc(a1,a2) {
+   return a1**a2;
+}
+</script>
+
+<h4>Here we are adding three numbers together 5, 2 and 7</h4>
+<p id="Addition"></p>
+    
+<script>
+var y = addFunc(5,2,7);
+document.getElementById("Addition").innerHTML = y;
+    
+function addFunc(b1,b2,b3) {
+   return b1+b2+b3;
+}
+</script>
+
+    
+    
+<h4>Creating a person object with three values Name, Age and Occupation</h4>
+
+<p id="Person"></p>
+
+<script>
+    
+var person = {
+    name: "Nidhesh",
+    age: "24", 
+    occupation: "Trainee Consultant"
+};    
+document.getElementById("Person").innerHTML =
+person.name + " is " + person.age + " years old and his current occupation is as a " + person.occupation + "." ;
+    
+</script>
+
+<h4>Editing the contents of the previous entry and out putting them again</h4>
+
+<p id="Person2"></p>
+
+<script>
+var person = {
+    name: "Nidhesh",
+    age: "24", 
+    occupation: "Trainee Consultant"
+};
+person.name = "James"    
+document.getElementById("Person2").innerHTML =
+person.name + " is " + person.age + " years old and his current occupation is as a " + person.occupation + "." ;
+</script>
+
+</body>
+</html>
